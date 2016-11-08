@@ -31,7 +31,7 @@ DEFAULTS - MOBILE FIRST
 ***************************/
 
 h1 {
-    font: bold 6.854rem 'Kreon', 'Times New Roman', serif;
+    font: bold 4.236rem 'Kreon', 'Times New Roman', serif;
     background: url(http://loremflickr.com/1200/400/bicycle,velodrome/all);
     text-align: center;
     background-repeat: no-repeat;
@@ -189,6 +189,9 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
+    h1{
+        font-size: 6.854rem;
+    }
     h2{
         font-size: 4.236rem;
     }
