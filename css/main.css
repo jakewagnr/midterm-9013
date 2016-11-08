@@ -1,0 +1,219 @@
+/**************************************************
+Font Scaling
+6.854rem 
+4.236rem 
+2.618rem 
+1.618rem 
+1.0rem   
+0.618rem 
+
+Colour scheme
+
+**************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Kreon:700|Ubuntu');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
+    background-color: #F6F6F6;
+}
+
+
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+
+h1 {
+    font: bold 4.236rem 'Kreon', 'Times New Roman', serif;
+    background: url(http://loremflickr.com/800/400/bicycle,velodrome/all);
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding: 20px;
+    margin: 10px 5px;
+}
+
+h2 {
+    font: bold 2.618rem 'Kreon', 'Times New Roman', serif;
+    margin: 5px auto;
+    background-color: #DE1B1B;
+    border: 2px solid #2b2b2b;
+    text-align: center;
+}
+
+p:nth-child(1n+2) {
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+li,
+p,
+a {
+    font: bold 1rem 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: #2b2b2b;
+    display: inline-block;
+}
+
+pre,
+code,
+kbd {
+    font: normal 1.0rem 'Kreon', 'Times New Roman', serif;
+}
+
+img {
+    display: inline-block;
+    transform: translateX(-2rem);
+}
+
+
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    margin: 0 0;
+}
+
+nav {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+nav>ul {
+    display: inline-block;
+    width: 100%;
+}
+
+nav li {
+    width: 100%;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    display: block;
+    font: bold 1.618rem 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
+    border: 2px solid #2b2b2b;
+    margin: 2px auto;
+    background-color: #E9E581;
+}
+
+nav a:active,
+nav a:focus,
+nav a:hover {
+    transition: .3s;
+    color: #DE1B1B;
+}
+
+main {
+    width: 100%;
+}
+
+.col {
+    float: none;
+    width: 100%;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #2b2b2b;
+}
+
+@media screen and (min-width:600px) {
+    img{
+        transform: translateX(0);
+    }
+    wrapper {
+        width: 100%;
+    }
+    nav {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    nav li {
+        width: 20%;
+        float: left;
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .col {
+        width: 50%;
+        display: inline-block;
+        float: left;
+        padding: 0 1.5%;
+    }
+    .col img {
+        width: 60%;
+        display: inline;
+        float: left;
+        padding-right: 2px;
+    }
+    footer {
+        width: 90%;
+        display: block;
+        position: relative;
+        margin-top: -180px;
+        height: 180px;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .col img {
+        width: 50%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    nav {
+        width: 30%;
+        display: inline-block;
+        float: left;
+    }
+    nav li {
+        width: 100%;
+    }
+    main {
+        width: 70%;
+        display: inline-block;
+        float: left;
+    }
+    .col img {
+        width: 55%;
+    }
+    footer {
+        width: 100%;
+    }
+}
