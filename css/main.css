@@ -85,6 +85,7 @@ img {
 .wrapper {
     width: 95%;
     margin: 0 auto;
+    
 }
 
 header {
@@ -121,7 +122,6 @@ nav a:active,
 nav a:focus,
 nav a:hover {
     transition: .3s;
-    color: #DE1B1B;
 }
 
 main {
@@ -147,7 +147,7 @@ footer {
 }
 
 @media screen and (min-width:600px) {
-    img{
+    img {
         transform: translateX(0);
     }
     wrapper {
@@ -189,14 +189,14 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-    h1{
+    h1 {
         font-size: 6.854rem;
     }
-    h2{
+    h2 {
         font-size: 4.236rem;
     }
-    p{
-        font-size:1.618rem; 
+    p {
+        font-size: 1.618rem;
     }
     .col img {
         width: 50%;
@@ -207,21 +207,20 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
-    
     nav {
         width: 30%;
         display: inline-block;
         float: left;
     }
     nav a,
-nav a:link,
-nav a:visited {
-    display: block;
-    font: bold 2.618rem 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
-    border: 2px solid #2b2b2b;
-    margin: 2px auto;
-    background-color: #E9E581;
-}
+    nav a:link,
+    nav a:visited {
+        display: block;
+        font: bold 2.618rem 'Ubuntu', 'Helvetica', 'Arial', sans-serif;
+        border: 2px solid #2b2b2b;
+        margin: 2px auto;
+        background-color: #E9E581;
+    }
     nav li {
         width: 100%;
     }
