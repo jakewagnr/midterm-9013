@@ -121,6 +121,7 @@ nav a:visited {
 nav a:active,
 nav a:focus,
 nav a:hover {
+    color: #DE1B1B;
     transition: .3s;
 }
 
